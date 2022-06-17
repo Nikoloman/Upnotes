@@ -2,6 +2,7 @@ package com.example.upnotes;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void New_Note(View view){
-        Toast.makeText(this, "The floating action button works", Toast.LENGTH_SHORT).show();
+        Intent new_note = new Intent(this, NewNote.class);
+        startActivity(new_note);
     }
 }
